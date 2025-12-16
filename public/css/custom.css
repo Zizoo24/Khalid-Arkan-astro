@@ -94,6 +94,50 @@ body, p, a, li, span,
 }
 
 /* ============================================
+   LOGO SIZING RULES
+   ============================================ */
+
+/* Header logo - main size */
+.header-logo img {
+    max-width: 220px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* When header is sticky/shrunk - smaller logo */
+.header-effect-shrink.sticky-active .header-logo img {
+    max-width: 160px !important;
+}
+
+/* Mobile logo sizing */
+@media (max-width: 991px) {
+    .header-logo img {
+        max-width: 180px;
+    }
+
+    .header-effect-shrink.sticky-active .header-logo img {
+        max-width: 140px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-logo img {
+        max-width: 150px;
+    }
+
+    .header-effect-shrink.sticky-active .header-logo img {
+        max-width: 120px !important;
+    }
+}
+
+/* Footer logo sizing */
+.footer .logo img,
+footer .logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* ============================================
    HERO SECTION
    ============================================ */
 
@@ -622,6 +666,89 @@ body, p, a, li, span,
 .fade-in-up.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ============================================
+   PORTFOLIO GRID - MATCH DEMO EXACTLY
+   Force aspect ratios to match demo layout
+   Demo image dimensions:
+   - Large left (col-md-6): 598x521 (aspect 1.15:1)
+   - Top right wide (col-12): 598x250 (aspect 2.4:1)
+   - Small squares (col-md-6 inside): 290x250 (aspect 1.16:1)
+   - Narrow columns (col-md-3): 290x250 (taller appearance)
+   - Wide center (col-md-6 bottom): 598x250 (aspect 2.4:1)
+   ============================================ */
+
+/* Portfolio Section Container */
+#services .thumb-info-wrapper {
+    overflow: hidden;
+}
+
+#services .thumb-info-wrapper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* First row - Large left image (tall) */
+#services .row.g-4 > .col-md-6:first-child .thumb-info-wrapper img {
+    aspect-ratio: 598 / 521;
+}
+
+/* First row - Right side nested grid */
+/* Top wide horizontal image */
+#services .row.g-4 > .col-md-6:nth-child(2) > .row > .col-12 .thumb-info-wrapper img {
+    aspect-ratio: 598 / 250;
+}
+
+/* Small square images in nested grid */
+#services .row.g-4 > .col-md-6:nth-child(2) > .row > .col-md-6 .thumb-info-wrapper img {
+    aspect-ratio: 290 / 250;
+}
+
+/* Second row - Narrow columns (col-md-3) - taller images */
+#services .row.g-4 > .col-md-3 .thumb-info-wrapper img {
+    aspect-ratio: 290 / 521;
+}
+
+/* Second row - Wide center (col-md-6) - horizontal */
+#services .row.g-4 > .col-md-3 + .col-md-6 .thumb-info-wrapper img {
+    aspect-ratio: 598 / 250;
+}
+
+/* Responsive - reset aspect ratios on mobile for better display */
+@media (max-width: 767px) {
+    #services .row.g-4 .thumb-info-wrapper img {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* ============================================
+   CTA SECTION - NAVY GRADIENT OVERLAY
+   ============================================ */
+
+.section-cta-navy {
+    position: relative;
+}
+
+.section-cta-navy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(15, 33, 67, 0.85) 0%, rgba(26, 58, 108, 0.80) 100%);
+    z-index: 0;
+}
+
+.section-cta-navy .section-angled-layer-top {
+    position: relative;
+    z-index: 2;
+}
+
+.section-cta-navy .section-angled-content {
+    position: relative;
+    z-index: 1;
 }
 
 /* Gold accent border */
