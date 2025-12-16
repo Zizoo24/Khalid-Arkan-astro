@@ -1,0 +1,648 @@
+/* ============================================
+   ARKAN INTERPRETATION - CUSTOM BRAND STYLES
+   ============================================
+   Brand Colors:
+   - Navy Blue (Primary): #0F2143
+   - Gold (Accent): #D4AF37
+   - Deep Charcoal: #1A1A1A
+   - Light Gray: #F8F9FA
+   ============================================ */
+
+:root {
+    --arkan-navy: #0F2143;
+    --arkan-gold: #D4AF37;
+    --arkan-charcoal: #1A1A1A;
+    --arkan-light: #F8F9FA;
+    --arkan-navy-light: #1A3A6C;
+    --arkan-gold-dark: #B8941F;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6,
+.heading-font {
+    font-family: 'Playfair Display', Georgia, serif !important;
+}
+
+body, p, a, li, span,
+.body-font {
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* ============================================
+   HEADER & NAVIGATION
+   ============================================ */
+
+.header-arkan {
+    background: var(--arkan-navy) !important;
+}
+
+.header-arkan .header-top {
+    background: rgba(15, 33, 67, 0.95);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.header-arkan .header-body {
+    background: var(--arkan-navy) !important;
+}
+
+.header-arkan .header-nav-main nav > ul > li > a {
+    color: #fff !important;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.header-arkan .header-nav-main nav > ul > li > a:hover,
+.header-arkan .header-nav-main nav > ul > li.active > a {
+    color: var(--arkan-gold) !important;
+}
+
+.header-arkan .dropdown-menu {
+    background: var(--arkan-navy);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.header-arkan .dropdown-menu a {
+    color: #fff !important;
+}
+
+.header-arkan .dropdown-menu a:hover {
+    background: rgba(212, 175, 55, 0.15) !important;
+    color: var(--arkan-gold) !important;
+}
+
+/* Logo styling */
+.arkan-logo {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.arkan-logo span {
+    color: var(--arkan-gold);
+}
+
+.arkan-logo-tagline {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -5px;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero-arkan {
+    background: linear-gradient(135deg, var(--arkan-navy) 0%, var(--arkan-navy-light) 100%);
+    position: relative;
+    overflow: hidden;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-arkan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/patterns/hero-pattern.png') repeat;
+    opacity: 0.05;
+}
+
+.hero-arkan h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.hero-arkan h1 .gold-text {
+    color: var(--arkan-gold);
+}
+
+.hero-arkan .lead {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.hero-stat {
+    text-align: center;
+}
+
+.hero-stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--arkan-gold);
+    display: block;
+}
+
+.hero-stat-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn-arkan-primary {
+    background: var(--arkan-gold) !important;
+    border-color: var(--arkan-gold) !important;
+    color: var(--arkan-navy) !important;
+    font-weight: 600;
+    padding: 14px 32px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-arkan-primary:hover {
+    background: var(--arkan-gold-dark) !important;
+    border-color: var(--arkan-gold-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+}
+
+.btn-arkan-outline {
+    background: transparent !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    font-weight: 500;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-arkan-outline:hover {
+    background: #fff !important;
+    color: var(--arkan-navy) !important;
+}
+
+.btn-arkan-gold-outline {
+    background: transparent !important;
+    border: 2px solid var(--arkan-gold) !important;
+    color: var(--arkan-gold) !important;
+    font-weight: 500;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-arkan-gold-outline:hover {
+    background: var(--arkan-gold) !important;
+    color: var(--arkan-navy) !important;
+}
+
+/* ============================================
+   SERVICES SECTION
+   ============================================ */
+
+.services-section {
+    padding: 100px 0;
+    background: var(--arkan-light);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--arkan-navy);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: var(--arkan-gold);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-description {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(15, 33, 67, 0.08);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(15, 33, 67, 0.15);
+    border-color: var(--arkan-gold);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--arkan-navy) 0%, var(--arkan-navy-light) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: var(--arkan-gold);
+}
+
+.service-card h4 {
+    color: var(--arkan-navy);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.service-card .service-link {
+    color: var(--arkan-gold);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-card .service-link:hover {
+    color: var(--arkan-navy);
+}
+
+/* ============================================
+   TRUST SIGNALS / CERTIFICATIONS
+   ============================================ */
+
+.trust-section {
+    padding: 80px 0;
+    background: var(--arkan-navy);
+}
+
+.trust-badge {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.trust-badge-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(212, 175, 55, 0.15);
+    border: 2px solid var(--arkan-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.trust-badge-icon i {
+    font-size: 1.8rem;
+    color: var(--arkan-gold);
+}
+
+.trust-badge h5 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.trust-badge p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ============================================
+   VALUE PROPOSITION SECTION
+   ============================================ */
+
+.value-prop-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.value-prop-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.value-prop-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.value-prop-icon i {
+    font-size: 1.5rem;
+    color: var(--arkan-gold);
+}
+
+.value-prop-content h5 {
+    color: var(--arkan-navy);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.value-prop-content p {
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--arkan-navy) 0%, var(--arkan-navy-light) 100%);
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer-arkan {
+    background: var(--arkan-charcoal);
+    padding: 80px 0 0;
+}
+
+.footer-arkan h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.footer-arkan p,
+.footer-arkan li,
+.footer-arkan a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-arkan a:hover {
+    color: var(--arkan-gold);
+}
+
+.footer-arkan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-arkan ul li {
+    margin-bottom: 12px;
+}
+
+.footer-arkan ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.footer-contact-item i {
+    color: var(--arkan-gold);
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 0;
+    margin-top: 60px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: var(--arkan-gold);
+    color: var(--arkan-navy) !important;
+}
+
+/* ============================================
+   INTERPRETATION MODES SECTION
+   ============================================ */
+
+.modes-section {
+    padding: 100px 0;
+    background: var(--arkan-light);
+}
+
+.mode-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.mode-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(15, 33, 67, 0.12);
+}
+
+.mode-card-header {
+    background: var(--arkan-navy);
+    padding: 25px;
+    text-align: center;
+}
+
+.mode-card-header i {
+    font-size: 2.5rem;
+    color: var(--arkan-gold);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.mode-card-header h4 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.mode-card-body {
+    padding: 25px;
+}
+
+.mode-card-body p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.mode-use-cases {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mode-use-cases li {
+    padding: 8px 0;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.mode-use-cases li:last-child {
+    border-bottom: none;
+}
+
+.mode-use-cases li i {
+    color: var(--arkan-gold);
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 991px) {
+    .hero-arkan h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-stats {
+        gap: 2rem;
+    }
+
+    .hero-stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-arkan {
+        min-height: 70vh;
+        padding: 80px 0 60px;
+    }
+
+    .hero-arkan h1 {
+        font-size: 2rem;
+    }
+
+    .hero-stats {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .hero-stat {
+        flex: 0 0 45%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        margin-bottom: 30px;
+    }
+}
+
+/* ============================================
+   ANIMATION UTILITIES
+   ============================================ */
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Gold accent border */
+.gold-border-left {
+    border-left: 4px solid var(--arkan-gold);
+    padding-left: 20px;
+}
+
+/* Text colors */
+.text-arkan-navy {
+    color: var(--arkan-navy) !important;
+}
+
+.text-arkan-gold {
+    color: var(--arkan-gold) !important;
+}
+
+.bg-arkan-navy {
+    background-color: var(--arkan-navy) !important;
+}
+
+.bg-arkan-gold {
+    background-color: var(--arkan-gold) !important;
+}
