@@ -710,9 +710,9 @@ footer .logo img {
     aspect-ratio: 290 / 521;
 }
 
-/* Second row - Wide center (col-md-6) - horizontal */
+/* Second row - Wide center (col-md-6) - match height of side columns */
 #services .row.g-2 > .col-md-3 + .col-md-6 .thumb-info-wrapper img {
-    aspect-ratio: 598 / 250;
+    aspect-ratio: 598 / 521;
 }
 
 /* Responsive - reset aspect ratios on mobile for better display */
