@@ -1,51 +1,41 @@
 ---
-// Arkan Interpretation Header Component
+// Arkan Interpretation Header Component - Porto Demo Style
 ---
 
-<header id="header" class="header-arkan header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 50, 'stickyHeaderContainerHeight': 90}">
-    <div class="header-body border-top-0 box-shadow-none">
-        <!-- Top Bar -->
+<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 50, 'stickyHeaderContainerHeight': 105}">
+    <div class="header-body border-top-0 bg-dark box-shadow-none overflow-visible">
         <div class="header-top header-top-semi-transparent">
-            <div class="container py-2">
+            <div class="container py-3-5">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                            <a href="tel:+97142345678" class="d-inline-flex align-items-center text-color-light font-weight-semibold text-decoration-none me-4">
-                                <i class="fas fa-phone-alt me-2 text-arkan-gold"></i>
+                        <div class="d-flex">
+                            <a href="tel:+97142345678" class="d-inline-flex align-items-center text-color-light font-weight-semibold line-height-1 text-decoration-none">
+                                <img width="25" height="25" src="/img/icons/phone.svg" alt="Phone Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light me-2'}" />
                                 +971 4 234 5678
                             </a>
-                            <a href="mailto:interpret@arkanlegal.com" class="d-none d-md-inline-flex align-items-center text-color-light text-decoration-none font-weight-semibold">
-                                <i class="fas fa-envelope me-2 text-arkan-gold"></i>
+                            <a href="mailto:interpret@arkanlegal.com" class="d-inline-flex align-items-center text-color-light text-decoration-none font-weight-semibold line-height-1 ms-4 ms-md-5-5">
+                                <img width="25" height="25" src="/img/icons/email.svg" alt="Email Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light me-2'}" />
                                 interpret@arkanlegal.com
                             </a>
                         </div>
                     </div>
                     <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                            <span class="text-color-light font-weight-semibold me-3 d-none d-lg-inline">
-                                <i class="fas fa-certificate me-2 text-arkan-gold"></i>
-                                MOJ Certified
-                            </span>
-                            <ul class="header-social-icons social-icons social-icons-clean social-icons-medium social-icons-icon-light mb-0">
-                                <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li class="social-icons-x"><a href="https://www.twitter.com/" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a></li>
-                                <li class="social-icons-whatsapp"><a href="https://wa.me/97142345678" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
-                            </ul>
-                        </div>
+                        <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean social-icons-medium social-icons-icon-light">
+                            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="social-icons-x"><a href="https://www.twitter.com/" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a></li>
+                            <li class="social-icons-whatsapp"><a href="https://wa.me/97142345678" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Main Navigation -->
-        <div class="header-container container" style="height: 90px;">
+        <div class="header-container container" style="height: 125px;">
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-row">
                         <div class="header-logo">
-                            <a href="/" class="arkan-logo">
-                                ARKAN<span>.</span>
-                                <span class="arkan-logo-tagline">Interpretation Services</span>
+                            <a href="/">
+                                <img alt="Arkan Interpretation" width="175" height="46" src="/img/logo-arkan.png" data-sticky-width="130" data-sticky-height="34" onerror="this.outerHTML='<span class=\'arkan-logo-text\'>ARKAN<span class=\'text-primary\'>.</span></span>'">
                             </a>
                         </div>
                     </div>
@@ -66,36 +56,12 @@
                                                 Services
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="/services/legal-interpretation">
-                                                        <i class="fas fa-gavel me-2 text-arkan-gold"></i>
-                                                        Legal & Court Interpretation
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/services/medical-interpretation">
-                                                        <i class="fas fa-heartbeat me-2 text-arkan-gold"></i>
-                                                        Medical Interpretation
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/services/conference-interpretation">
-                                                        <i class="fas fa-users me-2 text-arkan-gold"></i>
-                                                        Conference & Events
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/services/rsi">
-                                                        <i class="fas fa-globe me-2 text-arkan-gold"></i>
-                                                        Remote Simultaneous (RSI)
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/services/equipment-rental">
-                                                        <i class="fas fa-headphones me-2 text-arkan-gold"></i>
-                                                        Equipment Rental
-                                                    </a>
-                                                </li>
+                                                <li><a class="dropdown-item" href="/services/legal-interpretation">Legal & Court Interpretation</a></li>
+                                                <li><a class="dropdown-item" href="/services/medical-interpretation">Medical Interpretation</a></li>
+                                                <li><a class="dropdown-item" href="/services/conference-interpretation">Conference & Events</a></li>
+                                                <li><a class="dropdown-item" href="/services/rsi">Remote Simultaneous (RSI)</a></li>
+                                                <li><a class="dropdown-item" href="/services/equipment-rental">Equipment Rental</a></li>
+                                                <li><a class="dropdown-item" href="/services/saudi-gateway">Saudi Gateway Service</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
@@ -103,21 +69,9 @@
                                                 Interpretation Modes
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="/modes/simultaneous">
-                                                        Simultaneous Interpretation
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/modes/consecutive">
-                                                        Consecutive Interpretation
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/modes/whispered">
-                                                        Whispered (Chuchotage)
-                                                    </a>
-                                                </li>
+                                                <li><a class="dropdown-item" href="/modes/simultaneous">Simultaneous</a></li>
+                                                <li><a class="dropdown-item" href="/modes/consecutive">Consecutive</a></li>
+                                                <li><a class="dropdown-item" href="/modes/whispered">Whispered (Chuchotage)</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -142,11 +96,31 @@
                                 <i class="fas fa-bars"></i>
                             </button>
                         </div>
-                        <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2 ms-lg-3">
-                            <a href="/contact" class="btn btn-arkan-primary d-none d-lg-inline-block">
-                                Request Consultation
-                            </a>
+                        <div class="header-nav-features order-1 order-lg-2">
+                            <div class="header-nav-features-search-reveal-container">
+                                <div class="header-nav-feature header-nav-features-search header-nav-features-search-reveal d-inline-flex">
+                                    <a href="#" class="header-nav-features-search-show-icon d-inline-flex text-decoration-none">
+                                        <i class="icons icon-magnifier header-nav-top-icon text-color-light text-4-5 font-weight-bold position-relative top-4"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav-features header-nav-features-no-border p-static">
+        <div class="header-nav-feature header-nav-features-search header-nav-features-search-reveal header-nav-features-search-reveal-big-search header-nav-features-search-reveal-big-search-full">
+            <div class="container">
+                <div class="row h-100 d-flex">
+                    <div class="col h-100 d-flex">
+                        <form role="search" class="d-flex h-100 w-100" action="/search" method="get">
+                            <div class="big-search-header input-group">
+                                <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Type and hit enter...">
+                                <a href="#" class="header-nav-features-search-hide-icon"><i class="fas fa-times header-nav-top-icon"></i></a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

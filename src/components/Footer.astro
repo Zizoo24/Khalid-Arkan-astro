@@ -1,114 +1,126 @@
 ---
-// Arkan Interpretation Footer Component
+// Arkan Interpretation Footer Component - Porto Demo Style
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="footer-arkan">
-    <div class="container">
-        <div class="row">
-            <!-- Company Info -->
-            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-                <a href="/" class="arkan-logo mb-4 d-inline-block">
-                    ARKAN<span>.</span>
-                    <span class="arkan-logo-tagline">Interpretation Services</span>
-                </a>
-                <p class="mt-3 pe-lg-4">
-                    Dubai's premier high-stakes interpretation service. We provide Ministry of Justice certified interpreters for legal, medical, and corporate events where precision is non-negotiable.
-                </p>
-                <div class="mt-4">
-                    <span class="d-block mb-2 text-arkan-gold font-weight-semibold">Certifications:</span>
-                    <span class="badge bg-transparent border border-light text-light me-2 mb-2">MOJ Certified</span>
-                    <span class="badge bg-transparent border border-light text-light me-2 mb-2">ISO 18841</span>
-                    <span class="badge bg-transparent border border-light text-light me-2 mb-2">ISO 20228</span>
-                </div>
-            </div>
-
-            <!-- Services Links -->
-            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="/services/legal-interpretation">Legal & Court</a></li>
-                    <li><a href="/services/medical-interpretation">Medical</a></li>
-                    <li><a href="/services/conference-interpretation">Conference & Events</a></li>
-                    <li><a href="/services/rsi">Remote (RSI)</a></li>
-                    <li><a href="/services/equipment-rental">Equipment Rental</a></li>
-                </ul>
-            </div>
-
-            <!-- Interpretation Modes -->
-            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                <h4>Modes</h4>
-                <ul>
-                    <li><a href="/modes/simultaneous">Simultaneous</a></li>
-                    <li><a href="/modes/consecutive">Consecutive</a></li>
-                    <li><a href="/modes/whispered">Whispered</a></li>
-                </ul>
-                <h4 class="mt-4">Company</h4>
-                <ul>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/why-arkan">Why Arkan</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="col-lg-4 col-md-6">
-                <h4>Contact Us</h4>
-                <div class="footer-contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <strong class="text-white">Dubai Office</strong><br>
+<footer id="footer" class="footer-reveal mt-0">
+    <div class="container my-4">
+        <div class="row gy-5 gy-lg-0 pt-5 pb-2">
+            <div class="col-lg-4">
+                <h4 class="font-weight-bold text-color-light text-6 pb-1 mb-4">Contact Info</h4>
+                <ul class="list list-unstyled">
+                    <li class="pb-1 mb-3-5 text-color-grey text-5">
+                        <span class="d-block font-weight-semibold line-height-1 text-color-light text-1 mb-1">ADDRESS</span>
                         Business Bay, Churchill Towers<br>
                         Dubai, United Arab Emirates
+                    </li>
+                    <li class="pb-1 mb-3-5 text-color-grey text-5">
+                        <span class="d-block font-weight-semibold line-height-1 text-color-light text-1 mb-1">PHONE</span>
+                        <a href="tel:+97142345678" class="text-color-grey text-color-hover-light">+971 4 234 5678</a>
+                    </li>
+                    <li class="pb-1 mb-3-5 text-color-grey text-5">
+                        <span class="d-block font-weight-semibold line-height-1 text-color-light text-1 mb-1">EMAIL</span>
+                        <a href="mailto:interpret@arkanlegal.com" class="text-color-grey text-color-hover-light">interpret@arkanlegal.com</a>
+                    </li>
+                    <li class="pb-1 mb-3-5 text-color-grey text-5">
+                        <span class="d-block font-weight-semibold line-height-1 text-color-light text-1 mb-1">WORKING DAYS/HOURS</span>
+                        Sun - Thu / 9:00AM - 6:00PM<br>
+                        <span class="text-color-primary">24/7 Emergency Services</span>
+                    </li>
+                </ul>
+                <ul class="social-icons social-icons-clean-with-border social-icons-big">
+                    <li class="social-icons-linkedin">
+                        <a href="https://www.linkedin.com/" class="no-footer-css" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="social-icons-x mx-2">
+                        <a href="https://www.twitter.com/" class="no-footer-css" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+                    </li>
+                    <li class="social-icons-facebook">
+                        <a href="https://www.facebook.com/" class="no-footer-css" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="social-icons-whatsapp mx-2">
+                        <a href="https://wa.me/97142345678" class="no-footer-css" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="font-weight-bold text-color-light text-6 pb-1 mb-4">Our Services</h4>
+                <ul class="list list-unstyled mb-0">
+                    <li class="mb-1"><a href="/services/legal-interpretation" class="text-color-grey text-color-hover-light text-4">Legal & Court Interpretation</a></li>
+                    <li class="mb-1"><a href="/services/medical-interpretation" class="text-color-grey text-color-hover-light text-4">Medical Interpretation</a></li>
+                    <li class="mb-1"><a href="/services/conference-interpretation" class="text-color-grey text-color-hover-light text-4">Conference & Events</a></li>
+                    <li class="mb-1"><a href="/services/rsi" class="text-color-grey text-color-hover-light text-4">Remote Simultaneous (RSI)</a></li>
+                    <li class="mb-1"><a href="/services/equipment-rental" class="text-color-grey text-color-hover-light text-4">Equipment Rental</a></li>
+                    <li class="mb-1"><a href="/services/saudi-gateway" class="text-color-grey text-color-hover-light text-4">Saudi Gateway Service</a></li>
+                </ul>
+                <h4 class="font-weight-bold text-color-light text-6 pb-1 mb-4 mt-4">Company</h4>
+                <ul class="list list-unstyled mb-0">
+                    <li class="mb-1"><a href="/about" class="text-color-grey text-color-hover-light text-4">About Us</a></li>
+                    <li class="mb-1"><a href="/why-arkan" class="text-color-grey text-color-hover-light text-4">Why Arkan</a></li>
+                    <li class="mb-1"><a href="/contact" class="text-color-grey text-color-hover-light text-4">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-5">
+                <h4 class="font-weight-bold text-color-light text-6 pb-1 mb-4">Interpretation Modes</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="pb-1 mb-4">
+                            <h5 class="font-weight-semibold line-height-1 text-5 text-transform-none">
+                                <a href="/modes/simultaneous" class="d-flex text-color-light text-decoration-none">
+                                    <i class="fas fa-bolt me-2 text-color-primary"></i> Simultaneous
+                                </a>
+                            </h5>
+                            <p class="text-color-grey line-height-5 text-3-5 mb-0">
+                                Real-time interpretation for large conferences, summits, and live broadcasts.
+                            </p>
+                        </article>
+                        <article class="pb-1 mb-4">
+                            <h5 class="font-weight-semibold line-height-1 text-5 text-transform-none">
+                                <a href="/modes/consecutive" class="d-flex text-color-light text-decoration-none">
+                                    <i class="fas fa-clipboard-list me-2 text-color-primary"></i> Consecutive
+                                </a>
+                            </h5>
+                            <p class="text-color-grey line-height-5 text-3-5 mb-0">
+                                Maximum precision for court testimony, depositions, and medical consultations.
+                            </p>
+                        </article>
                     </div>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <a href="tel:+97142345678">+971 4 234 5678</a>
+                    <div class="col-md-6">
+                        <article class="pb-1 mb-4">
+                            <h5 class="font-weight-semibold line-height-1 text-5 text-transform-none">
+                                <a href="/modes/whispered" class="d-flex text-color-light text-decoration-none">
+                                    <i class="fas fa-user-secret me-2 text-color-primary"></i> Whispered
+                                </a>
+                            </h5>
+                            <p class="text-color-grey line-height-5 text-3-5 mb-0">
+                                Discreet executive-level interpretation for VIP escorts and state dinners.
+                            </p>
+                        </article>
+                        <div class="mt-4 p-4 border border-color-grey rounded">
+                            <h5 class="font-weight-semibold text-color-light mb-2">
+                                <i class="fas fa-certificate me-2 text-color-primary"></i> Certifications
+                            </h5>
+                            <span class="badge bg-transparent border border-light text-light me-2 mb-2">MOJ Certified</span>
+                            <span class="badge bg-transparent border border-light text-light me-2 mb-2">ISO 18841</span>
+                            <span class="badge bg-transparent border border-light text-light me-2 mb-2">ISO 20228</span>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <a href="mailto:interpret@arkanlegal.com">interpret@arkanlegal.com</a>
-                    </div>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fab fa-whatsapp"></i>
-                    <div>
-                        <a href="https://wa.me/97142345678">WhatsApp: +971 4 234 5678</a>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <strong class="text-white d-block mb-2">Office Hours:</strong>
-                    <span>Sunday - Thursday: 9:00 AM - 6:00 PM</span><br>
-                    <span class="text-arkan-gold">24/7 Emergency Services Available</span>
                 </div>
             </div>
         </div>
-
-        <!-- Bottom Bar -->
-        <div class="footer-bottom">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p>&copy; {currentYear} Arkan Interpretation. A Division of Arkan Legal Translation. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-social">
-                        <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.twitter.com/" target="_blank" title="X">
-                            <i class="fab fa-x-twitter"></i>
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://wa.me/97142345678" target="_blank" title="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr class="bg-color-grey opacity-1 mb-0">
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright bg-dark">
+        <div class="container py-2">
+            <div class="row py-4">
+                <div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
+                    <p class="text-color-grey text-4 opacity-7">&copy; {currentYear} Arkan Interpretation. A Division of Arkan Legal Translation. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
