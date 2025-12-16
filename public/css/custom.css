@@ -690,34 +690,34 @@ footer .logo img {
 }
 
 /* First row - Large left image (tall) */
-#services .row.g-4 > .col-md-6:first-child .thumb-info-wrapper img {
+#services .row.g-2 > .col-md-6:first-child .thumb-info-wrapper img {
     aspect-ratio: 598 / 521;
 }
 
 /* First row - Right side nested grid */
 /* Top wide horizontal image */
-#services .row.g-4 > .col-md-6:nth-child(2) > .row > .col-12 .thumb-info-wrapper img {
+#services .row.g-2 > .col-md-6:nth-child(2) > .row > .col-12 .thumb-info-wrapper img {
     aspect-ratio: 598 / 250;
 }
 
 /* Small square images in nested grid */
-#services .row.g-4 > .col-md-6:nth-child(2) > .row > .col-md-6 .thumb-info-wrapper img {
+#services .row.g-2 > .col-md-6:nth-child(2) > .row > .col-md-6 .thumb-info-wrapper img {
     aspect-ratio: 290 / 250;
 }
 
 /* Second row - Narrow columns (col-md-3) - taller images */
-#services .row.g-4 > .col-md-3 .thumb-info-wrapper img {
+#services .row.g-2 > .col-md-3 .thumb-info-wrapper img {
     aspect-ratio: 290 / 521;
 }
 
 /* Second row - Wide center (col-md-6) - horizontal */
-#services .row.g-4 > .col-md-3 + .col-md-6 .thumb-info-wrapper img {
+#services .row.g-2 > .col-md-3 + .col-md-6 .thumb-info-wrapper img {
     aspect-ratio: 598 / 250;
 }
 
 /* Responsive - reset aspect ratios on mobile for better display */
 @media (max-width: 767px) {
-    #services .row.g-4 .thumb-info-wrapper img {
+    #services .row.g-2 .thumb-info-wrapper img {
         aspect-ratio: 16 / 9;
     }
 }
