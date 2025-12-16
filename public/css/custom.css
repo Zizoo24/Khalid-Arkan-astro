@@ -94,6 +94,50 @@ body, p, a, li, span,
 }
 
 /* ============================================
+   LOGO SIZING RULES
+   ============================================ */
+
+/* Header logo - main size */
+.header-logo img {
+    max-width: 220px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* When header is sticky/shrunk - smaller logo */
+.header-effect-shrink.sticky-active .header-logo img {
+    max-width: 160px !important;
+}
+
+/* Mobile logo sizing */
+@media (max-width: 991px) {
+    .header-logo img {
+        max-width: 180px;
+    }
+
+    .header-effect-shrink.sticky-active .header-logo img {
+        max-width: 140px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-logo img {
+        max-width: 150px;
+    }
+
+    .header-effect-shrink.sticky-active .header-logo img {
+        max-width: 120px !important;
+    }
+}
+
+/* Footer logo sizing */
+.footer .logo img,
+footer .logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* ============================================
    HERO SECTION
    ============================================ */
 
