@@ -724,6 +724,30 @@ footer .logo img {
     #services .row.g-2 > .col-md-3 + .col-md-6 .thumb-info-wrapper img {
         aspect-ratio: 16 / 9;
     }
+
+    /* Mobile: Always show service card details (no hover on touch devices) */
+    #services .thumb-info.thumb-info-bottom-info .thumb-info-title {
+        transform: translate3d(0, 0, 0) !important;
+        opacity: 1 !important;
+    }
+
+    /* Mobile: Add subtle gradient overlay for better text readability */
+    #services .thumb-info-bottom-info-dark-linear .thumb-info-title {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%) !important;
+        padding-top: 40px;
+    }
+
+    /* Mobile: Scroll animation for service cards */
+    #services .thumb-info {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    #services .thumb-info.animate-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ============================================
