@@ -2,6 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { Image } from 'astro:assets';
+
+// Import service images for optimization
+import legalCourtImg from '../assets/images/services/legal-court.jpg';
+import medicalImg from '../assets/images/services/medical.jpg';
+import conferenceImg from '../assets/images/services/conference.jpg';
+import rsiImg from '../assets/images/services/rsi.jpg';
+import equipmentImg from '../assets/images/services/equipment.jpg';
+import saudiGatewayImg from '../assets/images/services/saudi-gateway.jpg';
+import simultaneousImg from '../assets/images/services/simultaneous.jpg';
 ---
 
 <Layout>
@@ -90,7 +100,7 @@ import Footer from '../components/Footer.astro';
                         <a href="/services/legal-interpretation" class="text-decoration-none">
                             <div class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear thumb-info-centered-icons rounded-0">
                                 <div class="thumb-info-wrapper rounded-0">
-                                    <img src="/img/projects/legal-court.jpg" class="img-fluid rounded-0" alt="Legal & Court Interpretation" onerror="this.src='/img/projects/project-corporate-21-1.jpg'">
+                                    <Image src={legalCourtImg} alt="Legal & Court Interpretation" class="img-fluid rounded-0" widths={[400, 600, 800]} sizes="(max-width: 768px) 100vw, 50vw" format="webp" quality={80} loading="eager" />
                                     <div class="thumb-info-title px-5-5 py-5-5">
                                         <h3 class="thumb-info-inner line-height-1 text-transform-none text-color-light font-weight-semibold text-5 mb-0">Legal & Court Interpretation</h3>
                                         <span class="thumb-info-type font-weight-light line-height-1 text-1">Dubai Courts, DIFC, ADGM</span>
@@ -105,7 +115,7 @@ import Footer from '../components/Footer.astro';
                                 <a href="/services/medical-interpretation" class="text-decoration-none">
                                     <div class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear thumb-info-centered-icons rounded-0">
                                         <div class="thumb-info-wrapper rounded-0">
-                                            <img src="/img/projects/medical.jpg" class="img-fluid rounded-0" alt="Medical Interpretation" onerror="this.src='/img/projects/project-corporate-21-2.jpg'">
+                                            <Image src={medicalImg} alt="Medical Interpretation" class="img-fluid rounded-0" widths={[400, 600, 800]} sizes="(max-width: 768px) 100vw, 50vw" format="webp" quality={80} loading="eager" />
                                             <div class="thumb-info-title px-5-5 py-5-5">
                                                 <h3 class="thumb-info-inner line-height-1 text-transform-none text-color-light font-weight-semibold text-5 mb-0">Medical Interpretation</h3>
                                                 <span class="thumb-info-type font-weight-light line-height-1 text-1">Hospitals, Clinics, Medical Tourism</span>
@@ -118,7 +128,7 @@ import Footer from '../components/Footer.astro';
                                 <a href="/services/conference-interpretation" class="text-decoration-none">
                                     <div class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear thumb-info-centered-icons rounded-0">
                                         <div class="thumb-info-wrapper rounded-0">
-                                            <img src="/img/projects/conference.jpg" class="img-fluid rounded-0" alt="Conference & Events" onerror="this.src='/img/projects/project-corporate-21-3.jpg'">
+                                            <Image src={conferenceImg} alt="Conference & Events" class="img-fluid rounded-0" widths={[300, 400, 600]} sizes="(max-width: 768px) 100vw, 25vw" format="webp" quality={80} loading="lazy" />
                                             <div class="thumb-info-title px-5-5 py-5-5">
                                                 <h3 class="thumb-info-inner line-height-1 text-transform-none text-color-light font-weight-semibold text-5 mb-0">Conference & Events</h3>
                                                 <span class="thumb-info-type font-weight-light line-height-1 text-1">Summits, Conferences</span>
@@ -131,7 +141,7 @@ import Footer from '../components/Footer.astro';
                                 <a href="/services/rsi" class="text-decoration-none">
                                     <div class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear thumb-info-centered-icons rounded-0">
                                         <div class="thumb-info-wrapper rounded-0">
-                                            <img src="/img/projects/rsi.jpg" class="img-fluid rounded-0" alt="Remote Simultaneous (RSI)" onerror="this.src='/img/projects/project-corporate-21-4.jpg'">
+                                            <Image src={rsiImg} alt="Remote Simultaneous (RSI)" class="img-fluid rounded-0" widths={[300, 400, 600]} sizes="(max-width: 768px) 100vw, 25vw" format="webp" quality={80} loading="lazy" />
                                             <div class="thumb-info-title px-5-5 py-5-5">
                                                 <h3 class="thumb-info-inner line-height-1 text-transform-none text-color-light font-weight-semibold text-5 mb-0">Remote (RSI)</h3>
                                                 <span class="thumb-info-type font-weight-light line-height-1 text-1">KUDO, Interprefy, Zoom</span>
@@ -146,7 +156,7 @@ import Footer from '../components/Footer.astro';
                         <a href="/services/equipment-rental" class="text-decoration-none">
                             <div class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear thumb-info-centered-icons rounded-0">
                                 <div class="thumb-info-wrapper rounded-0">
-                                    <img src="/img/projects/equipment.jpg" class="img-fluid rounded-0" alt="Equipment Rental" onerror="this.src='/img/projects/project-corporate-21-5.jpg'">
+                                    <Image src={equipmentImg} alt="Equipment Rental" class="img-fluid rounded-0" widths={[300, 400, 600]} sizes="(max-width: 768px) 100vw, 25vw" format="webp" quality={80} loading="lazy" />
                                     <div class="thumb-info-title px-5-5 py-5-5">
                                         <h3 class="thumb-info-inner line-height-1 text-transform-none text-color-light font-weight-semibold text-5 mb-0">Equipment Rental</h3>
                                         <span class="thumb-info-type font-weight-light line-height-1 text-1">Bosch Integrus</span>
@@ -159,7 +169,7 @@ import Footer from '../components/Footer.astro';
                         <a href="/services/saudi-gateway" class="text-decoration-none">
                             <div class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear thumb-info-centered-icons rounded-0">
                                 <div class="thumb-info-wrapper rounded-0">
-                                    <img src="/img/projects/saudi-gateway.jpg" class="img-fluid rounded-0" alt="Saudi Gateway Service" onerror="this.src='/img/projects/project-corporate-21-6.jpg'">
+                                    <Image src={saudiGatewayImg} alt="Saudi Gateway Service" class="img-fluid rounded-0" widths={[400, 600, 800]} sizes="(max-width: 768px) 100vw, 50vw" format="webp" quality={80} loading="lazy" />
                                     <div class="thumb-info-title px-5-5 py-5-5">
                                         <h3 class="thumb-info-inner line-height-1 text-transform-none text-color-light font-weight-semibold text-5 mb-0">Saudi Gateway Service</h3>
                                         <span class="thumb-info-type font-weight-light line-height-1 text-1">Giga Projects, NEOM</span>
@@ -172,7 +182,7 @@ import Footer from '../components/Footer.astro';
                         <a href="/modes/simultaneous" class="text-decoration-none">
                             <div class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear thumb-info-centered-icons rounded-0">
                                 <div class="thumb-info-wrapper rounded-0">
-                                    <img src="/img/projects/simultaneous.jpg" class="img-fluid rounded-0" alt="Simultaneous Interpretation" onerror="this.src='/img/projects/project-corporate-21-7.jpg'">
+                                    <Image src={simultaneousImg} alt="Simultaneous Interpretation" class="img-fluid rounded-0" widths={[300, 400, 600]} sizes="(max-width: 768px) 100vw, 25vw" format="webp" quality={80} loading="lazy" />
                                     <div class="thumb-info-title px-5-5 py-5-5">
                                         <h3 class="thumb-info-inner line-height-1 text-transform-none text-color-light font-weight-semibold text-5 mb-0">Simultaneous</h3>
                                         <span class="thumb-info-type font-weight-light line-height-1 text-1">Real-time Mode</span>
