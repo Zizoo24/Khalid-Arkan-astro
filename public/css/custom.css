@@ -801,3 +801,17 @@ footer .logo img {
 .bg-arkan-gold {
     background-color: var(--arkan-gold) !important;
 }
+
+/* ============================================
+   HERO SECTION - MOBILE RESPONSIVE IMAGE
+   ============================================ */
+
+@media (max-width: 767px) {
+    /* Show full hero image on mobile */
+    .section.vh-100[data-plugin-parallax] .parallax-background {
+        background-size: contain !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-color: var(--arkan-navy) !important;
+    }
+}
